@@ -175,7 +175,7 @@ ul > li > button:hover {
 }
 
 @media screen and (max-width: 320px) {
-    ul {
+    .menu-But{
        
       width: 100%;
       text-align: center;
