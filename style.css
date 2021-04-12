@@ -192,6 +192,19 @@ ul > li > button:hover {
         padding: 10px;
     }
     
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .calculator-grid{
+        display: grid;
+        align-content: center;
+        font-size: small;
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: minmax(120px,auto) repeat(5,100px);
+        justify-content: center;
+        padding: 10px;
+    }
     
     ul li button{
         display: block;
