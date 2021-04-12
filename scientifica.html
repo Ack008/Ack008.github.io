@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcolatrice</title>
+        <script defer src="/app.js"></script>
+        <script defer src="/menu.js"></script>
+        <link rel='stylesheet' type='text/css' href="/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+    </head>
+    <body>
+        <div class="menu-But"  id = 'but'>
+            <div class="menuBar" onclick="show()"x></div>
+            <ul id="menu">
+            <li><button onclick="show()">X</button></li>
+            <li> <a href="index.html">Standard</a> </li>
+            <li  class ='active'> <a href="#">Scientifica</a> </li>
+            <li> <a href="#">About</a></li>
+            
+        </ul>
+           
+            
+        </div>
+       
+        
+        <div class="calculator-grid scientific">       
+            <div class="output">
+               <div class="previous" id = "prev"></div>
+                <div class="current" id = "curr"></div>
+                </div>
+            <button class="clear-notful" onclick="cls()">CE</button>
+            <button class ="clear" onclick="clsAll()">C</button>
+            <button class=canc onclick="canc()">canc</button>
+            <button class="reciproco" onclick="rec()"><sup>1</sup>&frasl;<sub>x</sub></button>
+            <button data-operation onclick="square()"> x<sup>2</sup></button>
+            <button data-operation ><sup>2</sup>&radic;<sub>x</sub></button>
+            <button data-operation onclick="div_()">&divide;</button>
+            <button class="seven" onclick="insert(7)">7</button>
+            <button class="eight" onclick="insert(8)">8</button>
+            <button class="nine" onclick="insert(9)">9</button>
+            <button  data-operation onclick="mol()">*</button>
+            <button class="four" onclick="insert(4)">4</button>
+            <button class="five" onclick="insert(5)">5</button>
+            <button class="six" onclick="insert(6)">6</button>
+            <button class="minus" onclick="subctract()">&minus;</button>
+            <button class="one" onclick="insert(1)">1</button>
+            <button class="two" onclick="insert(2)">2</button>
+            <button class="three" onclick="insert(3)">3</button>
+            <button class="plus" onclick="add()">+</button>
+            <button class="sign"><sup>+</sup>&frasl;<sub>-</sub></button>
+            <button class="zero" onclick="insert(0)">0</button>
+            <button class="coma">,</button>
+            <button class="egual" onclick="egual()">=</button>
+
+        </div> 
+       
+    </body>
+</html>
+
+
+<!---->
