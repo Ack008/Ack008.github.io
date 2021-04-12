@@ -12,7 +12,7 @@ function insert(number_){
     }
     else
         currentOut.innerHTML += number_;
-    if(number_ !== '.')
+    if(number_ !== '.' && number_ !== 0)
     currentOut.innerHTML =Number.parseFloat(currentOut.innerHTML);
 }
 
