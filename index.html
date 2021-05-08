@@ -1,61 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calcolatrice</title>
-        <script defer src="/app.js"></script>
-        <script defer src="/menu.js"></script>
-        <link rel='stylesheet' type='text/css' href="/style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-    </head>
-    <body>
-        <div class="menu-But"  id = 'but'>
-            <div class="menuBar" onclick="show()"x></div>
-            <ul id="menu">
-            <li><button onclick="show()">X</button></li>
-            <li class ='active'> <a href="#">Standard</a> </li>
-            <li> <a href="scientifica.html">Scientifica</a> </li>
-            <li> <a href="#">About</a></li>
-            
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script defer type="module" src="index.js"></script>    
+    <title>Henry Plantagenet/Story</title>
+</head>
+<body>
+    <nav>
+        <h1>Henry Plantagenet</h1>
+        <ul class="menuUl">
+            <li><a href="#">Story</a></li>
+            <li><a href="riforme.html">Reformes</a></li>
+            <li><a href="war.html">War</a></li>    
         </ul>
-           
+    </nav>
+    <div class="Contenuto">
+        <div class="im">
+            <img src="./img/cartaIdentita.png" width=600 />
+        </div>
+        <div class="text">
+            <img src="./img/henry2.jfif" width=300 class="left"/>
+            <p>He became <b>king</b> after the death of the last Norman’s king.
+            </p>
+            
+            <p>The kingdom stretched from the <b>Scottish</b> Border to south <b>France</b></p>
+            <img src="./img/carta.jpg" width=800 class="right"/>
+            <img src="./img/crown.png" width=600 class="left"/>
+            <p><b>Constitution of Clarendon</b> It says that all everyone ( clergy included ) were subject to the crown</p>
+            <p>Conflict against the church ended in <b>December 1170</b></p>
+            <img src="./img/church.jpg" width=800 class="right"/>
+            <img src="./img/eleonora.jpg" width=600 class="left"/>
+            <div> 
+                <p>He was married with <b>Eleanor of Aquitaine</b></p>
+                <dl>
+                    <dt>Children list</dt>
+                    <dd>
+                        <ul>
+                            <li>Guglielmo</li>
+	                        <li>Enrico</li>
+	                        <li>Matilde</li>
+	                        <li>Riccardo</li>
+	                        <li>Goffredo</li>
+	                        <li>Giovanna</li>
+	                        <li>Eleonora</li>
+	                        <li>Giovanni</li>
+
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
             
         </div>
-       
         
-        <div class="calculator-grid">       
-            <div class="output">
-               <div class="previous" id = "prev"></div>
-                <div class="current" id = "curr"></div>
-                </div>
-            <button class="clear-notful notN" onclick="cls()">CE</button>
-            <button class ="clear notN" onclick="clsAll()">C</button>
-            <button class="canc notN" onclick="canc()">canc</button>
-            <button class="reciproco notN" onclick="rec()"><sup>1</sup>&frasl;<sub>x</sub></button>
-            <button data-operation onclick="square()"> x<sup>2</sup></button>
-            <button data-operation onclick="sqrt()" ><sup>2</sup>&radic;<sub>x</sub></button>
-            <button data-operation onclick="div_()">&divide;</button>
-            <button class="seven number " onclick="insert(7)">7</button>
-            <button class="eight number" onclick="insert(8)">8</button>
-            <button class="nine number" onclick="insert(9)">9</button>
-            <button class="notN" data-operation onclick="mol()">*</button>
-            <button class="four number" onclick="insert(4)">4</button>
-            <button class="five number" onclick="insert(5)">5</button>
-            <button class="six number" onclick="insert(6)">6</button>
-            <button class="minus notN" onclick="subctract()">&minus;</button>
-            <button class="one number" onclick="insert(1)">1</button>
-            <button class="two number" onclick="insert(2)">2</button>
-            <button class="three number" onclick="insert(3)">3</button>
-            <button class="plus notN" onclick="add()">+</button>
-            <button class="sign notN" onclick="sign()"><sup>+</sup>&frasl;<sub>-</sub></button>
-            <button class="zero number" onclick="insert(0)">0</button>
-            <button class="coma" onclick="insert('.')">,</button>
-            <button class="egual notN" onclick="egual()">=</button>
-
-        </div> 
-       
-    </body>
+        
+    </div>
+    
+</body>
 </html>
-
-
-<!---->
