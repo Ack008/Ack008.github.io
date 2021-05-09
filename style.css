@@ -180,7 +180,7 @@ font-family: 'Caveat Brush', cursive;
 
     nav{
         height: 9vh;
-        z-index: 10;
+        
     }
     .text{
         display: flex;
