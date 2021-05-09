@@ -157,7 +157,7 @@ font-family: 'Caveat Brush', cursive;
     }
     }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 680px) {
     .menuUl li{
         opacity: 0;
         transform: translateX(50px);
