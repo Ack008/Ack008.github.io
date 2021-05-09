@@ -19,6 +19,7 @@ nav{
     position:sticky ;
     width: 100%;
     padding: 1px;
+    overflow-x: hidden;
 }
 
 .menuButton{
