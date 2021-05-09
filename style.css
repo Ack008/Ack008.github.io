@@ -17,7 +17,7 @@ nav{
     justify-content: space-evenly;
     height: 8vh;
     position:sticky ;
-    width: 100%;
+    width: 100vh;
     padding: 1px;
     overflow-x: hidden;
 }
