@@ -16,10 +16,9 @@ nav{
     display: flex;
     justify-content: space-evenly;
     height: 8vh;
-    position:fixed;
-    width: 100vh;
+    position:sticky ;
+    width: 100%;
     padding: 1px;
-    overflow-x: hidden;
 }
 
 .menuButton{
@@ -158,7 +157,7 @@ font-family: 'Caveat Brush', cursive;
     }
     }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
     .menuUl li{
         opacity: 0;
         transform: translateX(50px);
@@ -180,7 +179,6 @@ font-family: 'Caveat Brush', cursive;
 
     nav{
         height: 9vh;
-        
     }
     .text{
         display: flex;
