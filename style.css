@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    width: fit-content;
+}
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    top:0;
+    background-color: rgb(4, 21, 37);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 8vh;
+    position:sticky ;
+    width: 100%;
+    padding: 1px;
+}
+
+.menuButton{
+    display: none;
+    height: fit-content;
+    
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 20s;
+   
+}
+.part{
+    width: 40px;
+    height: 2px;
+    margin-top: 8px;
+    margin-bottom:8px;
+    background-color: white;
+}
+nav h1{
+    font-size: 40px;
+}
+
+.menuUl{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 199px;
+    color: rgb(255, 0, 0);
+    list-style: none;
+    transition: all 0.3s;
+    
+}
+
+
+
+.menuUl a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    padding:16px;
+   
+}
+.menuUl .contorno{
+    height: 5px;
+    width: 0px;
+    background-color: red;
+    transition: all 0.1s;
+}
+.menuUl li:hover .contorno{
+    width: 100%;
+}
+
+
+.im {
+    max-width: 900px;
+    margin: auto;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 45px;
+    
+    
+}
+
+.text :not(h1){
+    margin-top: 50px;
+ 
+}
+
+.right{
+    margin: 0;
+    right:0;
+}
+.Contenuto b{
+    color:red;
+    font-style: oblique;
+}
+.Contenuto{
+    padding: 20px;
+}
+.title{
+    height: 12vh;
+    font-size: 70px;
+    background-color: black;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    grid-column: span 2;
+}   
+
+.Contenuto{
+    animation: anim 0.5s ease-in;
+}
+.reforme-p{
+    font-family: 'Caveat', cursive;;
+}
+.war{
+    
+    font-family: 'Lato', sans-serif;
+}
+
+.story{
+    
+font-family: 'Caveat Brush', cursive;
+
+}
+.im{
+    grid-column: span 2 ;
+     width: 600px; margin: auto;
+}
+.menuButton *{
+    transition: all 0.4s;
+}
+@keyframes buttonAnim {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@keyframes anim{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    }
+
+@media screen and (max-width: 680px) {
+    .menuUl li{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    .im{
+       width: 450px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .cart-apart{
+        display: flex;
+        flex-direction: row;
+        grid-column: span 2;
+    }
+    .right, .left{
+        width: 400px;
+    }
+
+    nav{
+        height: 9vh;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        padding: 20px;   
+        
+    }
+    nav h1{
+        font-size: 7vh;
+    }
+    
+    .menuUl{
+        transform: translateX(100%);
+        display: flex   ;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+        height: 90vh;
+        position: absolute;
+        align-items: center;
+        right: 0px;
+        top:7vh;
+        background-color: rgb(4, 21, 37);
+        z-index: -2;
+        transition: all 0.3s;
+    }
+    .menuButton{
+        display: block;
+        
+    }
+    
+    
+    .menuUl .contorno{
+        height: 5px;
+        width: 0px;
+        background-color: red;
+        transition: all 0.1s;
+    }
+    
+    
+    .menuUl li:hover .contorno{
+        width: 100%;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .toggle .line1{
+        transform: rotate(45deg) translate(7px,8px);
+
+    }
+
+    .toggle .line2{
+        opacity: 0;
+
+    }
+    .toggle .line3{
+        transform: rotate(-45deg) translate(5px,-6px);
+
+    }
+
+    
+
+        
+}
