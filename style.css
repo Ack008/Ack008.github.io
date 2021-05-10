@@ -16,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     height: 8vh;
-    position:sticky ;
+    position:fixed ;
     width: 100%;
     padding: 1px;
 }
